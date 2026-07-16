@@ -315,9 +315,6 @@ body {
     border-radius: 5px;
 }
 
-/* ===== THANH CUỘN KHI BẬT DARK MODE ===== */
-/* Dòng không có dấu cách: Đổi màu thanh cuộn chính của trang */
-/* Dòng có dấu cách: Đổi màu thanh cuộn của các hộp nhỏ (như popup) */
 
 body.dark-mode::-webkit-scrollbar-track,
 body.dark-mode ::-webkit-scrollbar-track {
@@ -341,9 +338,9 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
     border-radius: 15px;
     width: 200px;
     
-    /* CẤU HÌNH KHUNG VÀ CUỘN */
-    height: 200px; /* Độ cao tương đương khoảng 5-6 dòng */
-    overflow-y: auto; /* Tạo thanh cuộn khi danh sách quá dài */
+    
+    height: 200px; 
+    overflow-y: auto; 
     
     background: var(--glass-bg);
     backdrop-filter: blur(15px);
@@ -532,25 +529,25 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
         text-align: center; 
     }
 }
-/* --- CHỈ ÁP DỤNG CHO ĐIỆN THOẠI (Nằm ở cuối file) --- */
+
 @media (max-width: 768px) {
     
-    /* 1. Phóng to Popup Mục lục */
+    
     #chapter-popup {
-        width: 85vw !important; /* Rộng 85% màn hình */
-        height: 50vh !important; /* Chiều cao chiếm nửa màn hình */
-        left: 7.5% !important; /* Căn giữa */
-        bottom: 100px !important; /* Nâng cao lên */
+        width: 85vw !important; 
+        height: 50vh !important; 
+        left: 7.5% !important; 
+        bottom: 100px !important; 
         padding: 20px !important;
     }
 
     #chapter-popup a {
-        font-size: 18px !important; /* Chữ to hơn */
-        padding: 15px 10px !important; /* Tăng vùng chạm */
+        font-size: 18px !important; 
+        padding: 15px 10px !important; 
         display: block;
     }
 
-    /* 2. Phóng to nút chuyển trang (Bạn thay class này bằng class thực tế của nút chuyển trang nếu khác) */
+    
     .nav-buttons, .bottom-nav, .chapter-nav {
         width: 90% !important;
         margin: 0 auto !important;
@@ -558,7 +555,7 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
     }
     
     .nav-buttons a, .bottom-nav a {
-        padding: 15px 25px !important; /* Nút bấm to hơn */
+        padding: 15px 25px !important; 
         font-size: 18px !important;
     }
 }
