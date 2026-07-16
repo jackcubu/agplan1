@@ -372,6 +372,23 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
 #chapter-popup a:hover {
     color: var(--accent-color); 
 }
+/* mobile ui */
+
+@media (max-width: 768px) {
+    
+    
+    .glass-navbar {
+        padding: 15px 20px;
+    }
+    .search-bar input {
+        width: 150px;
+    }
+    .nav-actions {
+        gap: 5px;
+    }
+
+ /* phone ui */
+
 @media (max-width: 768px) {
     
     .glass-navbar {
