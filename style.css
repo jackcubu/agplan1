@@ -303,7 +303,7 @@ body {
     color: var(--text-muted);
     text-align: justify;
 }
-/* thanh cuộn */
+/* thanh cuon */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -333,7 +333,6 @@ body.dark-mode::-webkit-scrollbar-thumb:hover,
 body.dark-mode ::-webkit-scrollbar-thumb:hover {
     background: #ca0000; 
 }
-
 #chapter-popup {
     display: none;
     position: fixed;
@@ -342,9 +341,9 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
     border-radius: 15px;
     width: 200px;
     
-    
-    height: 200px; 
-    overflow-y: auto; 
+    /* CẤU HÌNH KHUNG VÀ CUỘN */
+    height: 200px; /* Độ cao tương đương khoảng 5-6 dòng */
+    overflow-y: auto; /* Tạo thanh cuộn khi danh sách quá dài */
     
     background: var(--glass-bg);
     backdrop-filter: blur(15px);
@@ -362,15 +361,15 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
     padding: 8px 0;
 }
 
-
+/* BỎ GẠCH CHÂN VÀ ĐỔI MÀU LINK */
 #chapter-popup a {
-    text-decoration: none; 
+    text-decoration: none; /* Bỏ gạch chân */
     color: var(--text-color);
     transition: 0.3s;
 }
 
 #chapter-popup a:hover {
-    color: var(--accent-color); 
+    color: var(--accent-color); /* Màu nhấn khi di chuột vào */
 }
 /* mobile ui */
 
