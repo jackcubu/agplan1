@@ -368,7 +368,20 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
 #chapter-popup a:hover {
     color: var(--accent-color); 
 }
-/* phone ui */
+/*phone ui */
+@media (max-width: 768px) {
+   
+    .glass-navbar {
+        padding: 15px 20px;
+    }
+    .search-bar input {
+        width: 150px;
+    }
+    .nav-actions {
+        gap: 5px;
+    }
+
+    /* phone ui */
     .manga-header {
         flex-direction: column;
         align-items: center;
@@ -389,11 +402,12 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
         text-align: center;
     }
 
-  
+    /
     .slider-card {
         width: 120px;
     }
     .slider-card img {
         height: 180px;
     }
-}
+} 
+
