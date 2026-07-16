@@ -307,25 +307,29 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
-
 ::-webkit-scrollbar-track {
     background: #f1f1f1; 
 }
-
 ::-webkit-scrollbar-thumb {
     background: #f8baba; 
     border-radius: 5px;
 }
 
-/* KHI BẬT DARK MODE */
+/* ===== THANH CUỘN KHI BẬT DARK MODE ===== */
+/* Dòng không có dấu cách: Đổi màu thanh cuộn chính của trang */
+/* Dòng có dấu cách: Đổi màu thanh cuộn của các hộp nhỏ (như popup) */
+
+body.dark-mode::-webkit-scrollbar-track,
 body.dark-mode ::-webkit-scrollbar-track {
     background: #110000; 
 }
 
+body.dark-mode::-webkit-scrollbar-thumb,
 body.dark-mode ::-webkit-scrollbar-thumb {
     background: #f5b3b3; 
 }
 
+body.dark-mode::-webkit-scrollbar-thumb:hover,
 body.dark-mode ::-webkit-scrollbar-thumb:hover {
     background: #ca0000; 
 }
