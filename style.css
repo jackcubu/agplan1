@@ -338,9 +338,9 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
     border-radius: 15px;
     width: 200px;
     
-    /* CẤU HÌNH KHUNG VÀ CUỘN */
-    height: 200px; /* Độ cao tương đương khoảng 5-6 dòng */
-    overflow-y: auto; /* Tạo thanh cuộn khi danh sách quá dài */
+    
+    height: 200px; 
+    overflow-y: auto; 
     
     background: var(--glass-bg);
     backdrop-filter: blur(15px);
@@ -358,13 +358,42 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
     padding: 8px 0;
 }
 
-/* BỎ GẠCH CHÂN VÀ ĐỔI MÀU LINK */
+
 #chapter-popup a {
-    text-decoration: none; /* Bỏ gạch chân */
+    text-decoration: none; 
     color: var(--text-color);
     transition: 0.3s;
 }
 
 #chapter-popup a:hover {
-    color: var(--accent-color); /* Màu nhấn khi di chuột vào */
+    color: var(--accent-color); 
+}
+/* phone ui */
+    .manga-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 15px; 
+    }
+    .manga-cover {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 250px;
+    }
+    .title-row h1 {
+        font-size: 24px;
+        flex-wrap: wrap; 
+    }
+    .info-wrapper {
+        align-items: center;
+        text-align: center;
+    }
+
+  
+    .slider-card {
+        width: 120px;
+    }
+    .slider-card img {
+        height: 180px;
+    }
 }
