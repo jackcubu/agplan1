@@ -532,3 +532,33 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
         text-align: center; 
     }
 }
+/* --- CHỈ ÁP DỤNG CHO ĐIỆN THOẠI (Nằm ở cuối file) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Phóng to Popup Mục lục */
+    #chapter-popup {
+        width: 85vw !important; /* Rộng 85% màn hình */
+        height: 50vh !important; /* Chiều cao chiếm nửa màn hình */
+        left: 7.5% !important; /* Căn giữa */
+        bottom: 100px !important; /* Nâng cao lên */
+        padding: 20px !important;
+    }
+
+    #chapter-popup a {
+        font-size: 18px !important; /* Chữ to hơn */
+        padding: 15px 10px !important; /* Tăng vùng chạm */
+        display: block;
+    }
+
+    /* 2. Phóng to nút chuyển trang (Bạn thay class này bằng class thực tế của nút chuyển trang nếu khác) */
+    .nav-buttons, .bottom-nav, .chapter-nav {
+        width: 90% !important;
+        margin: 0 auto !important;
+        padding: 15px !important;
+    }
+    
+    .nav-buttons a, .bottom-nav a {
+        padding: 15px 25px !important; /* Nút bấm to hơn */
+        font-size: 18px !important;
+    }
+}
