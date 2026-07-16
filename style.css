@@ -523,6 +523,7 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
         left: 50% !important; 
         transform: translateX(-50%) !important; 
         bottom: 85px !important; 
+        height: 300px !important;
     }
 
    
