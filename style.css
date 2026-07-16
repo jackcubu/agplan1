@@ -382,32 +382,97 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
     }
 
     /* phone ui */
+
+@media (max-width: 768px) {
+    
+
+    .glass-navbar {
+        padding: 10px 15px; 
+    }
+    
+    .logo {
+        font-size: 22px; 
+    }
+
+    .search-bar input {
+        width: 130px; 
+        padding: 8px 15px;
+    }
+
+    .nav-actions {
+        gap: 8px; 
+    }
+
+   
+    .nav-actions .glass-btn:first-child {
+        display: none; 
+    }
+
+    .container {
+        padding: 20px 10px; 
+    }
+
+    
+    .hero h1 {
+        font-size: 28px; 
+    }
+    
+    
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+    
+    .story-card {
+        padding: 10px;
+    }
+    
+    .card-info h3 {
+        font-size: 16px; 
+    }
+
+
+    .slider-card {
+        width: 110px;
+    }
+    .slider-card img {
+        height: 160px;
+    }
+
+
     .manga-header {
         flex-direction: column;
         align-items: center;
         padding: 15px;
-        gap: 15px; 
+        gap: 15px;
     }
     .manga-cover {
         width: 100% !important;
         height: auto !important;
-        max-width: 250px;
-    }
-    .title-row h1 {
-        font-size: 24px;
-        flex-wrap: wrap; 
+        max-width: 220px;
     }
     .info-wrapper {
         align-items: center;
         text-align: center;
     }
-
-    /
-    .slider-card {
-        width: 120px;
+    .title-row {
+        justify-content: center;
     }
-    .slider-card img {
-        height: 180px;
+    .title-row h1 {
+        font-size: 24px;
+        text-align: center;
+        flex-wrap: wrap; 
     }
-} 
 
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    
+    .chapter-content {
+        padding: 0;
+        margin: 0;
+    }
+}
