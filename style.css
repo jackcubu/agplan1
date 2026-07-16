@@ -505,7 +505,7 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
     .bottom-nav, .reading-nav, .chapter-nav { 
         width: 90% !important; 
         max-width: 350px;
-        padding: 12px 20px !important; /
+        padding: 12px 20px !important;
         bottom: 20px !important; 
     }
 
@@ -532,4 +532,24 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
         font-size: 16px !important;
         text-align: center; 
     }
+}
+/* --- NỐI LIỀN CÁC TRANG MANGA --- */
+.reader-container img {
+    max-width: 800px !important;
+    width: 100% !important;
+    
+    /* Xóa bỏ khoảng cách và trang trí */
+    margin-bottom: 0 !important; 
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    
+    /* Giúp ảnh hiển thị liền mạch, không bị thừa khoảng trắng chân ảnh */
+    display: block !important; 
+}
+
+/* Loại bỏ padding của container chứa ảnh nếu có */
+.reader-container {
+    padding: 0 !important;
 }
